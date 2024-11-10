@@ -33,7 +33,7 @@ public class PaymentRecommendationServiceImpl implements PaymentRecommendationSe
 
 
     private List<PaymentInstrument> sortPaymentInstruments(List<PaymentInstrument> paymentInstruments, List<PaymentMethodType> eligiblePaymentMethodTypes) {
-        //TODO: Reorder the payment instruments as per priority and relevance
+        //Reorder the payment instruments as per priority and relevance
         List<PaymentInstrument> orderedPaymentInstrumentList = new ArrayList<>();
         for (PaymentMethodType paymentMethodType : eligiblePaymentMethodTypes) {
             List<PaymentInstrument> methodPayments = paymentInstruments.stream()
